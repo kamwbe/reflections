@@ -8,9 +8,18 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+  do:
+  1.) git diff --staging
+    and
+  2.) git diff
+  This will show you the changes between what has been committed 1.) and what is
+  in staging, and the difference between what is in the work area and what
+  is in staging 2.)
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+  The is some feature that you are not sure would work out so you play around
+  with it on a branch rather than working on the main trunk of development.
 
 How do the diagrams help you visualize the branch structure?
 
