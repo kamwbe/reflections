@@ -22,6 +22,8 @@ organized? How would branches help?
   with it on a branch rather than working on the main trunk of development.
 
 How do the diagrams help you visualize the branch structure?
+  Diagrams make things visual which is in itself a big aid to understanding
+  a stucture.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
