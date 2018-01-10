@@ -27,6 +27,12 @@ How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+  It incorporates the changes on a branch with the changes on a master.  If there
+  were no changes on the master you would just rename the branch the master.  But
+  if there are you run a merge of the branch with the master and then delete
+  the branch label.  The reason you can delete the branch label is because after
+  the merge all of the commits on both the master and the branch are reachable 
+  from the master.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
