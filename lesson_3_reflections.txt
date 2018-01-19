@@ -10,12 +10,32 @@ automatically stay up-to-date with your remote repository?
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+Two words that you'll often hear people say when discussing git are "fork" and "clone".
+
+They are similar; they are related; they are not interchangeable.
+
+The clone operation is built into git: git-clone - Clone a repository into a new directory.
+
+Forking, on the other hand, is an operation which is used by a certain git workflow, made popular by GitHub, called the Fork and Pull Workflow:
+
+The fork & pull model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer. This model reduces the amount of friction for new contributors and is popular with open source projects because it allows people to work independently without upfront coordination.
+The difference between forking and cloning is really a difference in intent and purpose:
+
+The forked repository is mostly static. It exists in order to allow you to publish work for code review purposes. You don't do active development in your forked repository (in fact, you can't; because it doesn't exist on your computer, it exists on GitHub's server in the cloud).
+The cloned repository is your active repo. It is where you do all your work. But other people generally don't have access to your personal cloned repo, because it's on your laptop. So that's why you have the forked repo, so you can push changes to it for others to see and review
+This picture from StackOverflow helps a lot: What is the difference between origin and upstream in github.
+In this workflow, you both fork and clone: first you fork the repo that you are interested in, so that you have a separate repo that is clearly associated with your GitHub account.
+
+Then, you clone that repo, and do your work. When and if you wish, you may push to your forked repo.
+
+One thing that's sort of interesting is that you never directly update your forked repo from the original ("upstream") repo after the original "fork" operation. Subsequent to that, updates to your forked repo are indirect: you pull from upstream into your cloned repo, to bring it up to date, then (if you wish), you push those changes into your forked repo.
+
+This should be understood in the context of GitHub forks (where you fork a GitHub repo at GitHub before cloning that fork locally)
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    You're up to date and there won't be any conficts to resolve later.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
