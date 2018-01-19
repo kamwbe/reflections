@@ -40,7 +40,11 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    I'd probably use Dropbox or Google Drive.  It would be easier to just copy
+    files to these places without having to push and pull and commit etc.
+    but the great thing about Git is that it shows you what things have
+    changed and where conflicts occur.  I wouldn't want to try and keep track
+    of that in Dropbox.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
