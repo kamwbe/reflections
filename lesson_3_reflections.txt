@@ -49,5 +49,5 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    Whenever you are collaborating with someone on a project you need to make changes on a branch.  Then you push that branch to github and let the others look at it before it is merged with the master.  The only reason you would make changes directly to the master is if you were working by yourself.
 
